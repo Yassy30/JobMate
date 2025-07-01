@@ -1,0 +1,55 @@
+body{
+  background-color: #f3f3fa;
+}
+.homeIcon{
+background: #E7F0FA;
+width: 60px;
+height: 60px;
+
+/* padding: 18px;
+border-radius: 5px; */
+}
+
+.homeIcon i{
+font-size: 25px;
+color: #3d6cff;
+}
+
+
+.btnSin{
+border-radius: 2px;
+background: #0a65cc;
+color: #fff;
+border: none;
+width: 100px;
+padding: 7px;
+
+}
+
+.btnLog{
+border-radius: 2px;
+background: #fff;
+border: 1px solid #0a65cc;
+color: #0a65cc;
+width: 100px;
+padding: 6px;
+}
+
+.btnLog:hover{
+background: #fff;
+}
+@media (max-width : 577px) and (min-width : 239px) {
+.infoCard{
+  width: 300px;
+  margin: auto;
+
+}
+.main-content {
+  padding-top: 40px; 
+  width: 280px;; /* Ajustez pour tenir compte de la hauteur de la navbar */
+}
+
+}
+.main-content {
+  padding-top: 40px;  /* Ajustez pour tenir compte de la hauteur de la navbar */
+}

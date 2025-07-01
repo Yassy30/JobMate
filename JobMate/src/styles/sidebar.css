@@ -1,0 +1,291 @@
+.topNav{
+    background: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+  
+@media (max-width: 768px) {
+    .search-container {
+      margin-top: 15px;
+      justify-content: center; /* Center the search bar */
+    }
+  }
+  
+  /* Center the search bar between logo and profile on larger screens */
+  @media (min-width: 769px) {
+    .topNav {
+      display: flex;
+      align-items: center;
+    }
+  
+    .search-container {
+      order: 2; /* Place in the middle of the navbar */
+    }
+  }
+  
+.sideNav {
+    position: sticky;
+    top: 0;
+    padding-top: 59px; 
+    z-index: 1000;
+    width: 200px;
+    background-color: #fff;
+    min-height: 100vh;
+    border-right: 1px #ccc solid;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Fix the logout button at the bottom of the sidebar */
+.sideNav .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push logout button to the bottom */
+    flex-grow: 1;
+}
+
+.sideNav .nav-item.mt-auto {
+    margin-top: auto; /* Ensures logout button stays at the bottom */
+}
+
+/* Sticky Sidebar when scrolling */
+
+
+/* Additional adjustments for responsive behavior */
+@media (max-width: 768px) {
+    
+}
+
+
+.sideNav .navItem {
+    padding-left: 20px;
+}
+
+.sideNav .navItem i {
+    font-size: 1.2rem;
+}
+
+/* Content area that fills the rest of the screen */
+.content-area {
+    flex-grow: 1;
+    background-color: #ffffff;
+    /* To ensure it's visually distinct */
+    transition: margin-left 0.3s ease;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sideNav {
+        position: sticky;
+        width: 100px;
+        justify-content: center;
+        padding-top:59px;
+        top: 59px;;
+    }
+
+    .sideNav .navItem {
+        padding: 0;
+    }
+
+    .sideNav .navItem span {
+        display: none;
+        /* Hide text beside icons */
+    }
+
+    .sideNav .navItem i {
+        margin: 0 auto;
+        /* Center icons */
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+
+.navItem {
+    padding: 8px; /* Padding for non-active items */
+    margin: 5px 0;  /* Reduced vertical margin */
+    color: #616060;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+}
+
+/* Styling for active nav item */
+li.Nvg .nav-link.active {
+    background: #e7f0fa; /* Light background when active */
+    color: #0a65cc !important; /* Blue color for active item */
+    padding: 12px 20px; /* Add padding to active item */
+}
+
+/* Ensureli  nav-link is stretched across the full width of the item */
+li.Nvg .nav-link {
+    display: block; /* Makes the link take up full width */
+    width: 100%; /* Ensure it fills the parent element */
+    padding: 8px 10px; /* Default padding */
+}
+
+/* Active item’s left blue line (optional) */
+li.Nvg .nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #0a65cc;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px; /* Optional: Rounded edges */
+}
+
+/* Navigation item icon styling */
+li.Nvg .nav-link i {
+    font-size: 18px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Space between nav and next section */
+.navbar-nav {
+    margin-bottom: 15px;
+}
+
+
+  
+
+/* Top navigation item styling */
+.navItemTop {
+    font-size: 20px;
+}
+
+/* Decorative block inside active nav item (if used elsewhere) */
+.navItem.active .dec {
+    width: 2px;
+    height: 40px;
+    background: #0a65cc;
+    display: inline-block;
+}
+
+/* Top navigation bar styling */
+.topNav {
+    border-bottom: 1px #ccc solid;
+    position: fixed; /* Fixed to the viewport */
+    top: 0;          /* Stick to the top */
+    z-index: 1000;   /* Ensure it stays on top of other content */
+    width: 100%;     /* Stretch across the entire screen */
+    height: auto;    /* Adjust height automatically */
+    background: white; /* Optional: Prevent content underneath from showing */
+}
+
+
+.topNav .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push logout button to the bottom */
+    flex-grow: 1;
+}
+
+/* Logout button at the bottom of the navbar */
+.topNav .nav-item.mt-auto {
+    margin-top: auto; /* Ensures logout button stays at the bottom */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .topNav {
+        height: auto; /* Let it auto-adjust height in smaller screens */
+    }
+
+    .topNav .navbar-nav {
+        flex-direction: row; /* Change to horizontal layout on smaller screens */
+        justify-content: flex-start; /* Align items to the start */
+    }
+
+    .topNav .nav-item {
+        margin-right: 20px; /* Add some space between navbar items */
+    }
+}
+
+/* Sidebar (side navigation) styling */
+
+
+/* Profile image styling */
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Search Bar */
+
+.btnSearch {
+    border-radius: 2px;
+    background: #0a65cc;
+    color: #fff;
+    border: none;
+    padding: 0px 13px;
+
+}
+.LinkProf{
+    padding-top: 2px;
+    border-radius: 3px;
+}
+.LinkProf:hover{
+    background: #e7f0fa;
+    color: #0a65cc !important;
+
+}
+.LinkProf i{
+    font-size: 16px;
+    
+}
+.red-circle {
+    width: 13px;
+    height: 13px;
+    top: 6px;
+    left : 38px;
+    
+}
+
+
+/* Mina add style to the navbar */
+/* Ensure navbar stays fixed without breaking layout */
+/* .custom-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile Image Hover */
+  /* .profile:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  } */
+  
+  /* Lightbox Styling */
+  /* .lightbox {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .lightbox button:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* Input group focus styling */
+  /* .input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.5);
+  } */
+  
