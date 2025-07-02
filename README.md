@@ -41,7 +41,7 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Yassy30/jobboard-app.git](https://github.com/Yassy30/JobMate.git
+git clone https://github.com/Yassy30/JobMate.git
 ```
 ### 2. Install dependencies
 ```bash
